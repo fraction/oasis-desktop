@@ -1,6 +1,6 @@
 {
   "name": "@fraction/oasis-desktop",
-  "productName": "Oasis-Desktop",
+  "productName": "oasis-desktop",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fraction/oasis.git"
