@@ -30,6 +30,8 @@
     "appId": "io.fraction.oasis-desktop",
     "linux": {
       "category": "Network",
+      "executableName": "desiredName",
+      "artifactName": "${productName}-${version}.${ext}",
       "target": [
         {
           "target": "AppImage",
