@@ -30,7 +30,7 @@
     "appId": "io.fraction.oasis-desktop",
     "linux": {
       "category": "Network",
-      "executableName": "desiredName",
+      "executableName": "oasis-desktop",
       "artifactName": "${productName}-${version}.${ext}",
       "target": [
         {
@@ -38,12 +38,6 @@
           "arch": [
             "x64",
             "arm64"
-          ]
-        },
-        {
-          "target": "snap",
-          "arch": [
-            "x64"
           ]
         },
         {
@@ -63,7 +57,7 @@
       "icon": "build/dmg/icon.icns"
     },
     "win": {
-      "publisherName": "Fraction LLC",
+      "publisherName": "Fraction",
       "target": [
         {
           "target": "nsis",
