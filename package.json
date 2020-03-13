@@ -1,0 +1,81 @@
+{
+  "name": "@fraction/oasis-desktop",
+  "productName": "Oasis-Desktop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraction/oasis.git"
+  },
+  "version": "1.0.0",
+  "description": "Desktop installation for Oasis",
+  "main": "index.js",
+  "scripts": {
+    "test": "common-good",
+    "fix": "common-good fix",
+    "start": "electron index.js",
+    "install": "electron-builder install-app-deps",
+    "dist": "electron-builder"
+  },
+  "author": "Christian Bundy <christianbundy@fraction.io>",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "@fraction/oasis": "github:fraction/oasis#semver:2"
+  },
+  "devDependencies": {
+    "common-good": "^1.1.20",
+    "electron": "^8.0.0",
+    "electron-builder": "^22.4.0"
+  },
+  "optionalDependencies": {},
+  "build": {
+    "appId": "io.fraction.oasis-desktop",
+    "linux": {
+      "category": "Network",
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "snap",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "deb": {
+      "packageCategory": "net",
+      "priority": "optional",
+      "maintainer": "Christian Bundy <christianbundy@fraction.io>"
+    },
+    "dmg": {
+      "icon": "build/dmg/icon.icns"
+    },
+    "win": {
+      "publisherName": "Fraction LLC",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/fraction/oasis-desktop/issues"
+  },
+  "homepage": "https://github.com/fraction/oasis-desktop#readme",
+  "keywords": []
+}
