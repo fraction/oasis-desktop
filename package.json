@@ -3,7 +3,7 @@
   "productName": "oasis-desktop",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fraction/oasis.git"
+    "url": "git+https://github.com/fraction/oasis-desktop.git"
   },
   "version": "1.0.5",
   "description": "Desktop installation for Oasis",
