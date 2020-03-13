@@ -31,7 +31,7 @@
     "linux": {
       "category": "Network",
       "executableName": "oasis-desktop",
-      "artifactName": "${productName}-${version}.${ext}",
+      "artifactName": "${productName}-${version}-${arch}.${ext}",
       "target": [
         {
           "target": "AppImage",
