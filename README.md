@@ -1,15 +1,14 @@
 # Oasis-Desktop
 
-Hi. This repository aims to run Oasis in an Electron window. It kind of sucks
-but it can probably get better.
-
-## Example
-
-I think
+This is a thin Electron wrapper around [Oasis][oasis].
 
 ## Install
 
-I'm going to try to build installers, but this is the status quo.
+Most people should **[download binaries for macOS, or Linux][gh-dl]**.
+
+Windows support is Coming Soon&trade;.)
+
+Alternatively, you can build from source.
 
 ```sh
 git clone https://github.com/fraction/oasis-desktop.git
@@ -23,3 +22,6 @@ npm start
 AGPL-3.0
 
 Also, AGPL-3.0 code was reused from both Patchwork and Oasis.
+
+[gh-dl]: https://github.com/fraction/oasis-desktop/releases/latest
+[oasis]: https://github.com/fraction/oasis
