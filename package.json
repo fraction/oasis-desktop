@@ -59,13 +59,7 @@
     "win": {
       "publisherName": "Fraction",
       "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64",
-            "ia32"
-          ]
-        }
+        "nsis"
       ]
     }
   },
