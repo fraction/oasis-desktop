@@ -6,7 +6,7 @@ This is a thin Electron wrapper around [Oasis][oasis].
 
 Most people should **[download binaries for macOS, or Linux][gh-dl]**.
 
-Windows support is Coming Soon&trade;.)
+Windows support is Coming Soon&trade;.
 
 Alternatively, you can build from source.
 
