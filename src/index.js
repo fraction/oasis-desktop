@@ -3,13 +3,20 @@ process.argv.push("--no-open");
 
 // Starts server on localhost:3000... usually. :)
 require("@fraction/oasis");
+const path = require("path");
 
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, shell, ipcMain } = require("electron");
 
 function createWindow() {
-  const win = new BrowserWindow();
+  const win = new BrowserWindow({
+    height: 400,
+    width: 300,
+    webPreferences: { preload: path.join(__dirname, "renderer", "preload.js") }
+  });
 
-  win.loadURL("http://localhost:3000/");
+  win.loadFile(path.join(__dirname, "renderer", "index.html"));
+
+  ipcMain.on("open-oasis", () => shell.openExternal("http://localhost:3000"));
 }
 
 app.whenReady().then(createWindow);

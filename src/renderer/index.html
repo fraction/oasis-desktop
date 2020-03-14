@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Oasis-Desktop</title>
+<style>
+html {
+	margin:2rem;
+}
+button {
+	padding: 1rem;
+	width: 100%;
+}
+</style>
+  </head>
+
+  <body>
+    <form>
+      <button type="submit">Open Oasis</button>
+    </form>
+  </body>
+  <script>
+    const form = document.querySelector("form");
+    console.log(form);
+    form.onsubmit = window.openOasis;
+  </script>
+</html>
