@@ -5,11 +5,9 @@ This is a thin Electron wrapper around [Oasis][oasis].
 **Note:** When this app is open, you can also use Oasis directly by opening
 your web browser to http://localhost:3000
 
-
 ## Install
 
 Most people should **[download installers for Windows, macOS, or Linux][gh-dl]**.
-
 
 Alternatively, you can build from source.
 

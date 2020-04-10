@@ -7,22 +7,22 @@
   },
   "version": "1.0.8",
   "description": "Desktop installation for Oasis",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "common-good",
     "fix": "common-good fix",
-    "start": "electron index.js",
+    "start": "electron src",
     "install": "electron-builder install-app-deps",
     "dist": "electron-builder"
   },
   "author": "Christian Bundy <christianbundy@fraction.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@fraction/oasis": "github:fraction/oasis#semver:2"
+    "@fraction/oasis": "github:fraction/oasis#semver:2.14.0"
   },
   "devDependencies": {
     "common-good": "^1.1.20",
-    "electron": "^8.0.0",
+    "electron": "^8.2.1",
     "electron-builder": "^22.4.0"
   },
   "optionalDependencies": {},
