@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/fraction/oasis-desktop.git"
   },
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Desktop installation for Oasis",
   "main": "src/index.js",
   "scripts": {
