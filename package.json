@@ -12,13 +12,14 @@
     "test": "common-good",
     "fix": "common-good fix",
     "start": "electron src",
-    "install": "electron-builder install-app-deps",
+    "install": "electron-builder install-app-deps && patch-package",
     "dist": "electron-builder"
   },
   "author": "Christian Bundy <christianbundy@fraction.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@fraction/oasis": "github:fraction/oasis#semver:2.15.0"
+    "@fraction/oasis": "github:fraction/oasis#semver:2.15.0",
+    "patch-package": "^6.2.2"
   },
   "devDependencies": {
     "common-good": "^1.1.20",
