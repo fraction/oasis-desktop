@@ -13,6 +13,7 @@
     "fix": "common-good fix",
     "start": "electron src",
     "install": "electron-builder install-app-deps && patch-package",
+    "build": "electron-builder --publish=never",
     "dist": "electron-builder"
   },
   "author": "Christian Bundy <christianbundy@fraction.io>",
