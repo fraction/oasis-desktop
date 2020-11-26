@@ -22,3 +22,6 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run dist
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
