@@ -21,7 +21,13 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm ci
       - run: npm test
-      - run: npm run dist
+      - run: npm dist
+        if: github.ref != 'refs/heads/master'
+        env:
+          GH_TOKEN: 0000000000000000000000000000000000000000
+      - run: npm dist
+        if: github.ref == 'refs/heads/master'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
 
