@@ -9,7 +9,7 @@
   "description": "Desktop installation for Oasis",
   "main": "src/index.js",
   "scripts": {
-    "test": "common-good",
+    "test": "common-good test",
     "fix": "common-good fix",
     "start": "electron src",
     "install": "electron-builder install-app-deps && patch-package",
