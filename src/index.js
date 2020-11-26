@@ -11,7 +11,7 @@ function createWindow() {
   const win = new BrowserWindow({
     height: 400,
     width: 300,
-    webPreferences: { preload: path.join(__dirname, "renderer", "preload.js") }
+    webPreferences: { preload: path.join(__dirname, "renderer", "preload.js") },
   });
 
   win.loadFile(path.join(__dirname, "renderer", "index.html"));
