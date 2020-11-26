@@ -21,10 +21,10 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm ci
       - run: npm test
-      - run: npm run dist -- --publish=never
+      # build (will not publish)
+      - run: npm run build
         if: github.ref != 'refs/heads/master'
-        env:
-          GH_TOKEN: "0000000000000000000000000000000000000000"
+      # dist (may publish)
       - run: npm run dist
         if: github.ref == 'refs/heads/master'
         env:
