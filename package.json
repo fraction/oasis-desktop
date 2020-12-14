@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "common-good": "^4.0.3",
-    "electron": "^11.0.4",
+    "electron": "^11.1.0",
     "electron-builder": "^22.9.1"
   },
   "optionalDependencies": {},
