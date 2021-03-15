@@ -20,7 +20,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@fraction/oasis": "github:fraction/oasis#semver:2.17.0",
-    "patch-package": "^6.4.6"
+    "patch-package": "^6.4.7"
   },
   "devDependencies": {
     "common-good": "^4.0.3",
